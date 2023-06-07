@@ -1,13 +1,25 @@
 body {
     background-color: black;
+    text-align: center;
     color: white;
   }
+  ul {
+    list-style-type: none;
+    text-align: center;
+  }
+  
+  ul li {
+    text-align: center;
+  }
+  
   
   h1, h2, h3 {
+    text-align: center;
     color: white;
   }
   
   a {
+    text-align: center;
     color: white;
   }
   
