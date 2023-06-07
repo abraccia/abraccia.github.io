@@ -1,0 +1,15 @@
+body {
+    background-color: black;
+    color: white;
+  }
+  
+  h1, h2, h3 {
+    color: white;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  /* Add more CSS rules for other elements if needed */
+  
