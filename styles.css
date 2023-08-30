@@ -1,27 +1,242 @@
+/* * {
+    outline: 1px solid red;
+} */
+
+html {
+  background-color: #222;
+  display: flex;
+  justify-content: center;
+  padding-top: 0.25in;
+  padding-bottom: 0.25in;
+}
+
 body {
-    background-color: black;
-    text-align: center;
-    color: white;
-  }
-  ul {
-    list-style-type: none;
-    text-align: center;
-  }
+  background-color: white;
+  display: flex;
+  width: 8.5in;
+  height: 10.58325in;
+  color: #222;
+  font-family: Arial, Helvetica, sans-serif
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+}
+
+/*Font styles----*/
+h1{
+  font-size: 70px;
+  line-height: 20px;
+}
+
+.resume-container {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header{
+  display: flex;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  /* Bad Practice */
+}
+
+.title-container {
+  display: flex;
+  justify-content: left;
+  width: 100%;
+  margin-right: 0px;
+  word-spacing: 5px;
+  letter-spacing: 0px;
+  /* margin-bottom: 10px; */
+}
+
+.contact-container {
+  display: flow-root;
+  justify-content: center;
+  flex-flow: row nowrap;
+  margin-top: 30px;
+  margin-left: -200px;
+  margin-bottom: 0px;
+  /* width: 100%; */
+  font-size: 10pt;
+  font-family: 'Roboto',sans-serif;
+  font-weight: 500;
+}
+
+.title{
+  color: #1711c3;
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+}
+
+.section-container {
+  margin-top: 0px; 
+  /* Change? TODO */
+  margin-bottom: 0px;
+}
+
+.section-header {
+  /* text-align: left;
+  flex: 1; */
+  font-weight: 700;
+  font-size: 15pt;
+  text-indent: 2px;
+  /* margin-left: 2px; */
+  margin-top: 10px;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  color: #3e3aa2;
+  border-bottom: 3px rgb(150, 150, 150) solid;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
+}
+
+.section-header.first{
+  margin-top: 0;
+}
+
+.subsection {
+  margin-left: 5px;
+  margin-bottom: 10px;
+}
+
+.work-header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 1px;
+}
+
+.work-header.sub{
+  display: flex;
+  justify-content: space-between;
+  margin-top: -2px;
+  margin-bottom: 1px;
+}
+
+.subsection-header {
+  /* margin-top: 5px; */
+  text-align: left;
+  font-size: 12pt;
+  flex: 2;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+  margin-top: 4px;
+}
+
+.subsection-header.activities {
+  flex: 5;
+}
+
+.subsection-header.carryover{
+  flex: 8.5;
+}
+
+/* .subsection-header.center{
+  font-size: 13px;
+  flex: 5;
+  text-align: right;
+} */
+
+.subsection-header.datetime{
+  font-size: 13px;
+  flex: 5;
+  text-align: right;
+}
+
+.subsection-header.date{
+  font-size: 13px;
+  flex: 5;
+  text-align: left;
+}
+
+.subsection-header.longdate{
+  font-size: 13px;
+  flex: 6.5;
+  text-align: right;
+}
+
+.subsection-header.university{
+  margin-bottom: 0;
+}
+
+.subsection-header.degree{
+  font-size: 15px;
+  font-weight: bold;
+  color: #0600a9;
+  /* margin-top: 0px; */
+  margin-bottom: 2px;
+}
+
+.subsection-item {
+  font-size: 10pt;
+  font-weight: 500;
+  margin-left: 2px;
+  margin-bottom: 1px;
+}
+
+.subsection-item.blip{
+  margin-top: 6px;
+  margin-bottom: 4px;
+}
+
+.tally{
+font-size: 13px;
+font-weight: 600;
+font-style: italic;
+/* text-decoration: underline; */
+/* border-bottom: 1px rgb(111, 111, 111) solid; */
+border: 1px rgb(150, 150, 150) solid; /* border*/
+/* #bbb */
+/* color: #0600a9; */
+/* width: 100%; */
+border-radius: 5px; /*Rounded border */
+/* margin: 0 auto; Center the coupon */
+max-width: 600px;
+margin-top: 3px;
+margin-bottom: 10px;
+padding: 4px;
+text-align: center;
+}
+
+.callout{
+  border-left: 3px;
+  padding-left: 5px;
+  border-left-style: solid;
+  border-left-color: rgb(150, 150, 150);
+  font-style: italic;
+}
+
+ul{
+  margin: 0 0 0 13px;
+  padding: 0 0 0 0;
   
-  ul li {
-    text-align: center;
-  }
-  
-  
-  h1, h2, h3 {
-    text-align: center;
-    color: white;
-  }
-  
-  a {
-    text-align: center;
-    color: white;
-  }
-  
-  /* Add more CSS rules for other elements if needed */
-  
+}
+
+.column-container {
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+.column-left {
+  flex: 12;
+  margin-right: 10px;
+}
+
+.column-right {
+  flex: 7;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: rgb(128, 128, 128);
+  margin-bottom: 7px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 4px;
+  border-width: 1px;
+  /* border-color: rgb(128, 128, 128);      */
+}
